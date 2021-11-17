@@ -1,0 +1,29 @@
+.logo {
+    color: $color-white;
+}
+
+.section {
+    margin-bottom: 1rem;
+    &_heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.heading {
+    padding: 1rem 0;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.see-all {
+    color: $color-gray-2;
+    font-size: 1rem;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}

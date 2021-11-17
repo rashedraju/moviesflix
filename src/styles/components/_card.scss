@@ -1,0 +1,24 @@
+.card {
+    padding-bottom: 1rem;
+    &_img {
+        border-radius: 0.5rem;
+        max-width: 100%;
+    }
+
+    &_title {
+        color: $color-gray;
+        padding: 0.5rem 0;
+    }
+
+    &_rating {
+        &-icon {
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+
+        &-count {
+            color: $color-gray;
+            font-size: 0.8rem;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.app {
+    padding: 0 1rem;
+    margin: 1rem auto 0 auto;
+
+    display: grid;
+    grid-template-rows: [header-start] min-content [header-end search-start] min-content [search-end content-start] 1fr [content-end];
+    grid-template-columns: [left-aside-start] 15rem [left-aside-end container-start] 1fr [container-end];
+    grid-gap: 1rem;
+}
+
+.search {
+    grid-row: header-start / header-end;
+    grid-column: container-start / container-end;
+    width: 75%;
+    padding-left: 1rem;
+    @include respond(md) {
+        width: 100%;
+        grid-row: search-start / search-end;
+        grid-column: left-aside-start / container-end;
+    }
+}
+
+.aside {
+    transition: transform 0.2s ease-in-out;
+    &_left {
+        grid-row: header-end / content-end;
+        grid-column: left-aside-start / left-aside-end;
+        border-right: 1px solid $color-dark;
+
+        @include respond(md) {
+            transform: translateX(-110%);
+            padding: 0.5rem 0.5rem;
+            z-index: 999;
+            background: linear-gradient(
+                190deg,
+                hsl(228, 26%, 15%) 0%,
+                hsl(343, 98%, 5%) 100%
+            );
+        }
+
+        &-show {
+            transform: translateX(0%);
+        }
+    }
+}
+
+.main {
+    overflow: scroll;
+    height: 100vh;
+    grid-row: content-start / content-end;
+    grid-column: container-start / container-end;
+    padding: 0 1rem 5rem 1rem;
+
+    @include respond(md) {
+        height: 100%;
+        overflow: auto;
+        grid-row: search-end / content-end;
+        grid-column: left-aside-start / container-end;
+        margin-left: 0;
+        z-index: 111;
+    }
+}

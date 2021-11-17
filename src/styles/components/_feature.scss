@@ -1,0 +1,41 @@
+.feature {
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+
+    // @include respond(md) {
+    //     flex-direction: row;
+    //     overflow: scroll hidden;
+    // }
+
+    &_item {
+        padding: 1rem 3rem;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        color: $color-white;
+
+        &-yellow {
+            background: linear-gradient(45deg, $color-ochre, $color-yellow);
+        }
+
+        &-pink {
+            background: linear-gradient(45deg, $color-pink, $color-pumpkin);
+        }
+
+        &-red {
+            background: linear-gradient(45deg, $color-tertiary, $color-red);
+        }
+
+        &-green {
+            background: linear-gradient(45deg, $color-green, $color-green-2);
+        }
+
+        &-black {
+            background: linear-gradient(45deg, $color-seondary, $color-dark-2);
+        }
+    }
+}

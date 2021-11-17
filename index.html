@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./src/styles/main.scss" />
+        <title>MoviesFlix</title>
+    </head>
+    <body>
+        <div class="app" id="app">
+            <header class="header">
+                <svg
+                    class="header_bars"
+                    id="header_bars"
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g data-name="1">
+                        <path
+                            d="M441.13 166.52h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30ZM441.13 279.72h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30ZM441.13 392.92h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30Z"
+                            fill="#ffffff"
+                            class="fill-000000"
+                        ></path>
+                    </g>
+                </svg>
+                <a href="/" class="header_logo"
+                    ><h1 class="logo">MoviesFlix</h1></a
+                >
+            </header>
+            <div class="search">
+                <form class="searchbar" id="search">
+                    <svg
+                        class="searchbar_icon"
+                        fill="#000000"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        width="30px"
+                        height="30px"
+                    >
+                        <path
+                            d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                        />
+                    </svg>
+                    <input
+                        type="text"
+                        class="searchbar_field"
+                        placeholder="Type to search"
+                    />
+                </form>
+            </div>
+
+            <aside class="aside aside_left" id="aside-left">
+                <div class="categories">
+                    <div class="category">
+                        <h4 class="category_title">Categories</h4>
+                        <ul class="category_list" id="category-genre"></ul>
+                    </div>
+                    <div class="category">
+                        <h4 class="category_title">Release Year</h4>
+                        <ul
+                            class="category_list"
+                            id="category-release-date"
+                        ></ul>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main"><!-- contents --></main>
+        </div>
+        <script src="src/app/index.js"></script>
+    </body>
+</html>

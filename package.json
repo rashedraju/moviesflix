@@ -1,0 +1,36 @@
+{
+    "homepage": "https://rashedraju.github.io/moviesflix",
+    "name": "moviesflix",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "start": "parcel index.html --open",
+        "build": "parcel build index.html",
+        "deploy": "gh-pages -d dist"
+    },
+    "dependencies": {
+        "axios": "^0.24.0",
+        "dotenv": "^10.0.0",
+        "parcel-bundler": "^1.6.1",
+        "requirejs": "^2.3.6",
+        "sass": "^1.43.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.0",
+        "@babel/plugin-transform-runtime": "^7.16.0",
+        "eslint": "^8.2.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-prettier": "^4.0.0",
+        "typescript": "4.4.4"
+    },
+    "resolutions": {
+        "@babel/preset-env": "7.13.8"
+    },
+    "keywords": [
+        "javascript",
+        "starter"
+    ]
+}

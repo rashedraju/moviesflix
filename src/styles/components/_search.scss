@@ -1,0 +1,24 @@
+.searchbar {
+    width: 100%;
+    position: relative;
+
+    &_icon {
+        fill: $color-dark-2;
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    &_field {
+        background: transparent;
+        color: $color-gray;
+        width: 100%;
+        padding: 0.8rem 1rem 0.8rem 3rem;
+        border: 2px solid $color-dark-2;
+        border-radius: 5rem;
+        font-size: 1rem;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &_bars {
+        display: none;
+        width: 2.5rem;
+        cursor: pointer;
+
+        @include respond(md) {
+            display: block;
+        }
+    }
+}

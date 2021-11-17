@@ -1,0 +1,28 @@
+.category {
+    margin: 1rem 0;
+    &_title {
+        padding: 0.5rem 0;
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+
+    &_item {
+        border: 1px solid $color-dark-2;
+        padding: 0.5rem;
+        border-radius: 5rem;
+        a {
+            color: $color-gray;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+
+        &:hover {
+            background-color: $color-dark;
+        }
+    }
+}
