@@ -3,7 +3,7 @@
 ## Why?
 
 The main purpose of this project is demonstrate my skill on vanilla javascript.<br />
-See live on https://rashedraju.github.io/moviesflix/
+See live on https://moviesflix-ea21d.web.app/
 
 ## Tools
 
