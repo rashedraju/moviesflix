@@ -6,7 +6,7 @@
     "main": "index.html",
     "scripts": {
         "start": "parcel index.html --out-dir docs --open",
-        "build": "parcel build index.html --out-dir docs --public-url ./"
+        "build": "parcel build index.html --out-dir docs --public-url ./moviesflix"
     },
     "dependencies": {
         "axios": "^0.24.0",
