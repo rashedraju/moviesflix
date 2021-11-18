@@ -87,7 +87,6 @@ import { renderGenres, renderReleaseDate } from './containers/categories';
     if (path === '/movie') {
         try {
             const movie = await getMovieDetails(params.id);
-            console.log(movie);
             render(movieDetails(movie));
         } catch (error) {
             console.log(error);

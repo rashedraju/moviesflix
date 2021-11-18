@@ -5,9 +5,8 @@ export const fetchPopularMovies = async () =>
     axios.get(`${API_BASE_URL}discover/movie?sort_by=popularity.desc&api_key=${API_KEY}`);
 
 export const fetchHighestRatedMovies = async () =>
-    axios.get(
-        `${API_BASE_URL}discover/movie/?certification_country=US&certification=R&api_key=${API_KEY}`
-    );
+    axios.get(`${API_BASE_URL}discover/movie?sort_by=vote_average.desc&api_key=${API_KEY}`);
+
 export const fetchMovieDetails = async (id) =>
     axios.get(`${API_BASE_URL}movie/${id}?api_key=${API_KEY}`);
 

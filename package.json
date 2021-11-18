@@ -1,12 +1,11 @@
 {
-    "homepage": "https://rashedraju.github.io/moviesflix",
     "name": "moviesflix",
     "version": "1.0.0",
     "description": "",
     "main": "index.html",
     "scripts": {
-        "start": "parcel index.html --out-dir docs --open",
-        "build": "parcel build index.html --out-dir docs --public-url ./moviesflix"
+        "start": "parcel index.html --out-dir dist --open",
+        "build": "parcel build index.html --out-dir dist --public-url ./"
     },
     "dependencies": {
         "axios": "^0.24.0",
