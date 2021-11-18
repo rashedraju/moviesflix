@@ -1,5 +1,6 @@
 .cache
 .idea
+.firebase
 /dist
 /build
 /node_modules
